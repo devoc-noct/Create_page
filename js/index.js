@@ -1,3 +1,3 @@
-function open1(url){
+function open(url){
   window.open(url,'_blank');
 }
