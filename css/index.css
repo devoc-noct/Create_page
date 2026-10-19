@@ -1,8 +1,61 @@
-@charset "UTF=8";
-body{
-  background-color: #1e1e1e;
+/* 💡 画面全体のデザイン（背景を少し暗くして、文字を中央に寄せる） */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f6f9; /* 目に優しい薄いグレー */
+    color: #333333;
+    padding: 40px 20px;
+    margin: 0;
+    text-align: center;
 }
-.open_window{
-  background-color: #000000;
-  color: #ffffff;
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 💡 直感的に操作できる「フォルダ枠」のデザイン */
+.open_window {
+    background-color: #ffffff; /* フォルダのベースは白 */
+    border: 2px solid #e0e0e0;  /* 優しいグレーの枠線 */
+    border-radius: 12px;       /* 角を丸くして親しみやすく */
+    padding: 24px;
+    margin: 15px auto;         /* 画面中央に配置 */
+    max-width: 400px;          /* 横に広がりすぎないように制限 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* ほんのり立体的な影をつける */
+    
+    /* ⭐ マウスを載せたときに「クリックできる」と直感で分からせる手袋マーク */
+    cursor: pointer; 
+    
+    /* アニメーションを滑らかにする設定 */
+    transition: all 0.2s ease-in-out; 
+}
+
+/* 💡 文字のデザイン */
+.open_window h3 {
+    margin: 0 0 8px 0;
+    color: #3498db;            /* タイトルは鮮やかなブルー */
+    font-size: 20px;
+}
+
+.open_window p {
+    margin: 0;
+    color: #7f8c8d;            /* 説明文は少し薄いグレー */
+    font-size: 14px;
+}
+
+/* ⭐ 【超重要】マウスを載せた（ホバーした）ときの直感的な反応 */
+.open_window:hover {
+    background-color: #fdfdfd;
+    border-color: #3498db;     /* 枠線がテーマカラーのブルーに光る */
+    transform: translateY(-4px); /* フォルダがふわっと浮き上がるような立体的な動き */
+    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.15); /* 影を強くして浮遊感を出す */
+}
+
+/* 💡 スマホやクリックした瞬間（アクティブ）の反応 */
+.open_window:active {
+    transform: translateY(-1px); /* 押した瞬間に少し沈む（ボタンを押した感覚を再現） */
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.1);
 }
