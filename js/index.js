@@ -1,3 +1,4 @@
 function openWindow(url) {
-  window.open(url, '_blank');
+  // 新しいタブは開かず、今の画面のまま切り替える（ブロックされません）
+  window.location.href = url;
 }
