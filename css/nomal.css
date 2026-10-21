@@ -35,6 +35,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   line-height: 1.7; /* 行間をたっぷり空けて読みやすく */
   letter-spacing: 0.03em; /* 文字の間隔をほんの少し広げて高級感を出す */
+       padding: 40px 20px;
+    margin: 0;
+    text-align: center;
 }
 
 /* ==========================================================================
