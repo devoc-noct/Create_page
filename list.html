@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ダークモード タグ見本帳</title>
+  <!-- ここにこれまでのCSSが読み込まれている前提です -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. 全体を囲むコンテナ（max-widthで横広がりを防ぎ、中央に寄せる） -->
+  <div class="container">
+
+    <!-- 2. 見出しタグ（h1〜h3） -->
+    <header class="section">
+      <h1>大見出し（h1：サイト名や記事タイトルに）</h1>
+      <p>これは標準の段落（pタグ）です。真っ白ではない上品な色と、ゆったりした行間（line-height）が自動で適用されます。</p>
+    </header>
+
+    <!-- 3. セクションとh2（左側にアクセントカラーの線が自動で入る） -->
+    <section class="section">
+      <h2>中見出し（h2：章の区切りに）</h2>
+      <h3>小見出し（h3：細かい箇所の見出しに）</h3>
+      <p>文章の中に入れる<a href="#">リンク（aタグ）</a>は、暗い背景でも沈まない明るいアクセント色になります。マウスを乗せると下線が引かれます。</p>
+    </section>
+
+    <!-- 4. カード（class="card" をつけると立体的な箱になる） -->
+    <section class="section">
+      <h2>特別な要素（クラス指定）</h2>
+      
+      <div class="card">
+        <h3>カード型ボックス（class="card"）</h3>
+        <p>背景より少しだけ明るい色（#1a1a1e）になり、周囲に薄い境界線と柔らかな影がつきます。これだけで一気に現代的なWebサイトの質感になります。</p>
+        <!-- ボタン（class="btn"） -->
+        <a href="#" class="btn">ボタン（class="btn"）</a>
+      </div>
+    </section>
+
+    <!-- 5. リスト（ul, ol） -->
+    <section class="section">
+      <h2>リスト（ul / ol）</h2>
+      
+      <p>通常の箇条書き（ul）：ポッチ（・）の色が自動的にアクセントカラーになります。</p>
+      <ul>
+        <li>リスト項目その１</li>
+        <li>リスト項目その２</li>
+        <li>リスト項目その３</li>
+      </ul>
+
+      <p>番号付きリスト（ol）：数字の色が自動的にアクセントカラーになります。</p>
+      <ol>
+        <li>最初のステップ</li>
+        <li>次のステップ</li>
+        <li>最後のステップ</li>
+      </ol>
+    </section>
+
+    <!-- 6. テーブル（table） -->
+    <section class="section">
+      <h2>テーブル（table：表組み）</h2>
+      <p>背景が自動でカードと同じ色になり、ヘッダー（th）が少し明るく強調されます。線も極薄のグレーで洗練された印象になります。</p>
+      <table>
+        <thead>
+          <tr>
+            <th>プラン名</th>
+            <th>料金</th>
+            <th>容量</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>スタンダード</td>
+            <td>¥980 / 月</td>
+            <td>50GB</td>
+          </tr>
+          <tr>
+            <td>プレミアム</td>
+            <td>¥1,980 / 月</td>
+            <td>200GB</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 7. 引用（blockquote） -->
+    <section class="section">
+      <h2>引用（blockquote）</h2>
+      <blockquote>
+        「左側にグレーの太線が入り、文字が少し薄いグレーの斜体（イタリック）になります。本や他サイトからの引用、またはちょっとした『利用者の声』などを載せるのに最適です」
+      </blockquote>
+    </section>
+
+    <!-- 8. 入力フォーム（input / textarea） -->
+    <section class="section">
+      <h2>フォーム（input / textarea）</h2>
+      <p>入力欄をクリック（フォーカス）してみてください。枠線がアクセント色に変わり、周囲がホワッと光るモダンなエフェクトが起きます。</p>
+      
+      <div style="margin-bottom: 1rem;">
+        <label style="display:block; margin-bottom: 0.5rem;">お名前</label>
+        <input type="text" placeholder="例：山田 太郎">
+      </div>
+
+      <div style="margin-bottom: 1rem;">
+        <label style="display:block; margin-bottom: 0.5rem;">メッセージ</label>
+        <textarea rows="4" placeholder="ここに入力してください..."></textarea>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
