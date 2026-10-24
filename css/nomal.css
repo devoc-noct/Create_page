@@ -113,3 +113,85 @@ p {
   transform: translateY(-2px); /* ホバーした時に少し上に浮き上がらせる */
   text-decoration: none;
 }
+/* ==========================================================================
+   📋 4. 追加の主要タグ（リスト・表・引用・フォーム）
+   ========================================================================== */
+
+/* 箇条書き（ドット）リスト */
+ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem; /* 左側にポッチが入るスペースを確保 */
+}
+ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc; /* きれいな丸ドット */
+}
+
+/* 番号付きリスト */
+ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+ol li {
+  margin-bottom: 0.5rem;
+  list-style-type: decimal; /* 1, 2, 3...の連番 */
+}
+
+/* リスト内のテキストを少し上品にする小技 */
+li::marker {
+  color: var(--accent); /* リストの「・」や「数字」だけをアクセント色にしてプロっぽく */
+}
+
+/* テーブル（表） */
+table {
+  width: 100%;
+  border-collapse: collapse; /* 線の隙間をなくす */
+  margin-bottom: 1.5rem;
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden; /* 角丸を滑らかに見せる */
+}
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border); /* 薄い境界線 */
+}
+th {
+  background-color: rgba(255, 255, 255, 0.04); /* ヘッダーだけ少し明るく */
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* 引用（ちょっとした補足やレビューに便利） */
+blockquote {
+  margin-bottom: 1.5rem;
+  padding: 16px 20px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-left: 4px solid var(--text-muted); /* 左側にグレーの太線 */
+  color: var(--text-muted);
+  font-style: italic; /* 斜体にして引用感を出す */
+}
+
+/* 入力フォーム（お問合せフォームなどに） */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: rgba(255, 255, 255, 0.05); /* 暗い背景 */
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+/* 入力欄をクリックしたとき（フォーカス時）のプロっぽい光 */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); /* 周わりをホワッと光らせる */
+}
+
